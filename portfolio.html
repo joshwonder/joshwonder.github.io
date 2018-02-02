@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>WONDEROG.COM</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>Welcome to my portfolio!.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="queen.jpg" alt="Mountains" style="width:100%">
+      <h3>Mekatili</h3>
+      <p>Rich and Daniel Collaborated in forming this amazing potrait that recieved millions of positives turning out to be a blast .</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="rich3.jpg" alt="Lights" style="width:100%">
+      <h3>Rich Allelas</h3>
+      <p>We all agree to the amazing shots taken by Allela but this was actaully amazing!.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="mimi.png" alt="Nature" style="width:100%">
+      <h3>Rogue and Bro Wonder</h3>
+      <p>He and his brother have amassed more than 300,000 subscribers to their YouTube channel. He appeared as a cast in rapper Lil Haiti’s music video for his single “Hit the Wave.”<.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="myself.jpg" alt="Mountains" style="width:100%">
+      <h3>WonderOG</h3>
+      <p>I studied coding at Emobilis and no one lacks assurance of the institute!.</p>
+      <p>More text after full editing is done</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="melanin.jpg" alt="Bear" style="width:100%">
+  <h3>Finally Her</h3>
+  <p>Her name Melanie!</p>
+  <p>One of the best photos taken by Wonder actually by phone.
+  </p><p>It turned out to recieve thousands of views.. link coming up in a few ✊</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
